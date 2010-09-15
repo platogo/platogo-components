@@ -1,0 +1,1 @@
+package com.platogo.components.utils {	import flash.utils.getDefinitionByName;		/**	 * @author sirflo	 */	public class Library 	{		public static function getAsset( identifier : String ) : *		{			var clazz : Class = getDefinitionByName( identifier ) as Class;            return new clazz();		}	}}
